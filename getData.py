@@ -15,7 +15,7 @@ def GetDataset(args):
        
        trans_chinese = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.1307,), (0.3081,))])
        
-       path_dir="/content/Chinese_digit_FL/Chinese_digit/data/data"
+       path_dir="../Project/Chinese_digit/data/data"
 
        class MyDataset(Dataset): 
           def __init__(self, path_dir, transform=None): 
@@ -31,7 +31,7 @@ def GetDataset(args):
               image_path = os.path.join(self.path_dir, image_index)  
               image = Image.open(image_path)  
             
-              label = int(image_path.split('\\')[-1].split('.')[0].split('_')[-1]) - 1
+              label = int(image_path.split('/')[-1].split('.')[0].split('_')[-1]) - 1
  
               image = self.transform(image)
               return image, label
