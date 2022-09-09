@@ -3,7 +3,7 @@ import argparse
 def args_parser():
     parser = argparse.ArgumentParser()
     # federated arguments
-    parser.add_argument('--global_epochs', type=int, default=1)
+    parser.add_argument('--global_epochs', type=int, default=10)
     parser.add_argument('--local_epochs', type=int, default=10)
     parser.add_argument('--num_clients', type=int, default=100)
     parser.add_argument('--fraction', type=float, default=0.1)    
