@@ -36,7 +36,7 @@ class LocalUpdate(object):
 
         # train and update
         if self.args.optimizer == 'sgd':
-          optimizer = torch.optim.SGD(net.parameters(), lr=self.args.learn_rate, momentum=self.args.momentum)
+          optimizer = torch.optim.SGD(net.parameters(), lr=self.args.learning_rate, momentum=self.args.momentum)
         elif self.args.optimizer == 'adam':
           optimizer = torch.optim.Adam(net.parameters())
         else:
