@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @python: 3.6
-
 import torch
 from torch import nn
 import torch.nn.functional as F
@@ -16,7 +12,6 @@ import os
 from PIL import Image
 from torch.utils.data import DataLoader,Dataset
 import matplotlib.pyplot as plt
-from sklearn import preprocessing
 
 def test_image(net_g, datatest, args):
     net_g.eval()

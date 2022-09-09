@@ -6,10 +6,9 @@ import os
 from PIL import Image
 from torch.utils.data import DataLoader,Dataset
 import matplotlib.pyplot as plt
-from sklearn import preprocessing
 from torchvision import datasets, transforms
 import torch
-from sampling import Cmnist_iid, Cmnist_noniid,Cmnist_noniid_unequal
+from allocate import Cmnist_iid, Cmnist_noniid,Cmnist_noniid_unequal
 
 def GetDataset(args):
        
