@@ -14,7 +14,7 @@ def GetDataset(args):
        
        trans_chinese = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.1307,), (0.3081,))])
        
-       path_dir="../Project/Chinese_digit/data/data"
+       path_dir="../MSc_project_2538069Y/Chinese_digit/data/data"
 
        class MyDataset(Dataset): 
           def __init__(self, path_dir, transform=None): 
